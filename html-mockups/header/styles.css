@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #248363;
+  --secondary-color: #636363;
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --spanish-viridian: #248363ff;
+  --jet: #343330ff;
+  --brown: #7e5920ff;
+  --fulvous: #dc851fff;
+  --yellow-orange: #ffa737ff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.site-name > i {
+  font-size: 2.5rem;
+}
+
+.site-name > span {
+  font-size: 1.9rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  box-shadow: 0 0 7px 0 lightgray;
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > ul {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  gap: 1rem;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.nav li {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: var(--black-color);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav li a:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 1rem;
+}
+
+button.primary {
+  color: white;
+  font-size: 1.1rem;
+  font-family: inherit;
+  background-color: var(--spanish-viridian);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+button.secondary {
+  color: var(--spanish-viridian);
+  font-size: 1.1rem;
+  font-family: inherit;
+  background-color: var(--white-color);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
